@@ -25,7 +25,7 @@ body {
 }
 h1, h2 {
     font-family: young-serif;
-    margin: 1.5rem 0;
+    padding: 1.5rem 0;
 }
 h1 {
     font-size: 2.35rem;
@@ -46,8 +46,7 @@ ul {
     padding: 0 1rem;
 }
 .time {
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 2rem 1rem;
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
 }
@@ -84,6 +83,33 @@ td:last-child {
 }
 
 /* Footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 1rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
 
+/* For laptop screens */
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: hsl(30, 54%, 90%);
+        padding: 4rem 0;
+    }
+    .hero-image {
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .hero-image, header, main, .attribution {
+        width: 40vw;
+        margin: 0 auto;
+        background-color: white;
+    }
+    .attribution{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
