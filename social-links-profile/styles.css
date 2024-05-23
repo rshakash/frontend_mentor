@@ -54,8 +54,10 @@ li {
     border-radius: 5px;
 }
 li a {
+    width: 100%;
+    display: block;
     text-decoration: none;
-    color: white;
+    color: inherit;
     font-weight: 600;
 }
 
@@ -82,4 +84,9 @@ footer {
     main {
         width: 25vw;
     }
+    li:hover {
+        cursor: pointer;
+        background-color: hsl(75, 94%, 57%);
+        color: black;
+    }      
 }
