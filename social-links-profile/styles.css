@@ -4,12 +4,82 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 10px);
+    font-size: 14px;
+}
+
+main {
+    background-color: hsl(0, 0%, 12%);
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.3rem;
+
+}
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name {
+    margin: 1rem auto 0.4rem auto;
+}
+.location {
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.bio {
+    margin-bottom: 1rem;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin: 1rem;
+    background-color: hsl(0, 0%, 20%);
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
 
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+}
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px){
+    main {
+        width: 50vw;
+    }
+}
+@media only screen and (min-width: 900px){
+    main {
+        width: 25vw;
+    }
 }
