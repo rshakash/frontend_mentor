@@ -71,3 +71,14 @@ h1 {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media screen and (min-width: 768px){
+    main {
+        width: 30vw;
+        height: min-content;
+    }
+    h1:hover{
+        color:hsl(47, 88%, 63%);
+        cursor: pointer;
+    }
+}
